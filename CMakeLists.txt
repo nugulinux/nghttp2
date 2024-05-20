@@ -87,7 +87,7 @@ find_package(Systemd 209)
 find_package(Jansson  2.5)
 set(ENABLE_HPACK_TOOLS_DEFAULT ${JANSSON_FOUND})
 # 2.0.8 is required because we use evconnlistener_set_error_cb()
-find_package(Libevent 2.0.8 COMPONENTS core extra openssl)
+#find_package(Libevent 2.0.8 COMPONENTS core extra openssl)
 set(ENABLE_EXAMPLES_DEFAULT ${LIBEVENT_OPENSSL_FOUND})
 
 find_package(LibXml2 2.6.26)
